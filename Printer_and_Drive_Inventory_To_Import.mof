@@ -1,0 +1,75 @@
+#pragma namespace ("\\\\.\\root\\cimv2\\SMS")
+#pragma deleteclass("NETWORKPRINTERS", NOFAIL)
+[SMS_Report(TRUE),SMS_Group_Name("NETWORKPRINTERS"),SMS_Class_ID("NETWORKPRINTERS"),
+SMS_Context_1("__ProviderArchitecture=32|uint32"),
+SMS_Context_2("__RequiredArchitecture=true|boolean")]
+Class NETWORKPRINTERS: SMS_Class_Template
+{
+[SMS_Report(TRUE),key] string KeyName;
+[SMS_Report(TRUE)] String UserDomain;
+[SMS_Report(TRUE)] String UserName;
+[SMS_Report(TRUE)] String PrintServer;
+[SMS_Report(TRUE)] String PrinterQueue;
+[SMS_Report(TRUE)] String PrinterLocation;
+[SMS_Report(TRUE)] String PrinterDriver;
+[SMS_Report(TRUE)] String PrintProcessor;
+[SMS_Report(TRUE)] String PrinterPortName;
+[SMS_Report(TRUE)] String DateInventoried;
+};
+
+#pragma namespace ("\\\\.\\root\\cimv2\\SMS")
+#pragma deleteclass("NETWORKPRINTERS_64", NOFAIL)
+[SMS_Report(TRUE),SMS_Group_Name("NETWORKPRINTERS64"),SMS_Class_ID("NETWORKPRINTERS64"),
+SMS_Context_1("__ProviderArchitecture=64|uint32"),
+SMS_Context_2("__RequiredArchitecture=true|boolean")]
+Class NETWORKPRINTERS_64 : SMS_Class_Template
+{
+[SMS_Report(TRUE),key] string KeyName;
+[SMS_Report(TRUE)] String UserDomain;
+[SMS_Report(TRUE)] String UserName;
+[SMS_Report(TRUE)] String PrintServer;
+[SMS_Report(TRUE)] String PrinterQueue;
+[SMS_Report(TRUE)] String PrinterLocation;
+[SMS_Report(TRUE)] String PrinterDriver;
+[SMS_Report(TRUE)] String PrintProcessor;
+[SMS_Report(TRUE)] String PrinterPortName;
+[SMS_Report(TRUE)] String DateInventoried;
+};
+
+#pragma namespace ("\\\\.\\root\\cimv2\\SMS")
+#pragma deleteclass("MAPPEDDRIVES", NOFAIL)
+[SMS_Report(TRUE),SMS_Group_Name("MAPPEDDRIVES"),SMS_Class_ID("MAPPEDDRIVES"),
+SMS_Context_1("__ProviderArchitecture=32|uint32"),
+SMS_Context_2("__RequiredArchitecture=true|boolean")]
+Class MAPPEDDRIVES: SMS_Class_Template
+{
+[SMS_Report(TRUE),key] string KeyName;
+[SMS_Report(TRUE)] String UserDomain;
+[SMS_Report(TRUE)] String UserName;
+[SMS_Report(TRUE)] String ShareName;
+[SMS_Report(TRUE)] String DriveLetter;
+[SMS_Report(TRUE)] Uint32 Size;
+[SMS_Report(TRUE)] Uint32 FreeSpace;
+[SMS_Report(TRUE)] String System;
+[SMS_Report(TRUE)] String FileSystem;
+[SMS_Report(TRUE)] String DateInventoried;
+};
+
+#pragma namespace ("\\\\.\\root\\cimv2\\SMS")
+#pragma deleteclass("MAPPEDDRIVES_64", NOFAIL)
+[SMS_Report(TRUE),SMS_Group_Name("MAPPEDDRIVES64"),SMS_Class_ID("MAPPEDDRIVES64"),
+SMS_Context_1("__ProviderArchitecture=64|uint32"),
+SMS_Context_2("__RequiredArchitecture=true|boolean")]
+Class MAPPEDDRIVES_64 : SMS_Class_Template
+{
+[SMS_Report(TRUE),key] string KeyName;
+[SMS_Report(TRUE)] String UserDomain;
+[SMS_Report(TRUE)] String UserName;
+[SMS_Report(TRUE)] String ShareName;
+[SMS_Report(TRUE)] String DriveLetter;
+[SMS_Report(TRUE)] Uint32 Size;
+[SMS_Report(TRUE)] Uint32 FreeSpace;
+[SMS_Report(TRUE)] String System;
+[SMS_Report(TRUE)] String FileSystem;
+[SMS_Report(TRUE)] String DateInventoried;
+};
