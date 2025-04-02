@@ -17,6 +17,9 @@ WMF Blog posts
 
 OS version table https://msdn.microsoft.com/en-us/library/windows/desktop/ms724832%28v=vs.85%29.aspx
 
+There was an update someone made and is available at https://github.com/BClev/Powershell-Scripts/blob/master/InstallPowershell5_1.ps1
+
+This script is just here for archival
 #>
 
 #Get the operating environment
