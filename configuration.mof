@@ -1,0 +1,71 @@
+//==== Start custom printer and drive reporting ====
+
+#pragma namespace ("\\\\.\\root\\cimv2")
+#pragma deleteclass("MAPPEDDRIVES", NOFAIL)
+[dynamic, provider("RegProv"), ClassContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\SCCMINVENTORY\\MAPPEDDRIVES")]
+Class MAPPEDDRIVES
+{
+[key] string KeyName;
+[PropertyContext("UserDomain")] String UserDomain;
+[PropertyContext("UserName")] String UserName;
+[PropertyContext("ShareName")] String ShareName;
+[PropertyContext("DriveLetter")] String DriveLetter;
+[PropertyContext("Size")] Uint32 Size;
+[PropertyContext("FreeSpace")] Uint32 FreeSpace;
+[PropertyContext("System")] String System;
+[PropertyContext("FileSystem")] String FileSystem;
+[PropertyContext("DateInventoried")] String DateInventoried;
+};
+
+#pragma namespace ("\\\\.\\root\\cimv2")
+#pragma deleteclass("MAPPEDDRIVES_64", NOFAIL)
+[dynamic, provider("RegProv"), ClassContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\SCCMINVENTORY\\MAPPEDDRIVES")]
+Class MAPPEDDRIVES_64
+{
+[key] string KeyName;
+[PropertyContext("UserDomain")] String UserDomain;
+[PropertyContext("UserName")] String UserName;
+[PropertyContext("ShareName")] String ShareName;
+[PropertyContext("DriveLetter")] String DriveLetter;
+[PropertyContext("Size")] Uint32 Size;
+[PropertyContext("FreeSpace")] Uint32 FreeSpace;
+[PropertyContext("System")] String System;
+[PropertyContext("FileSystem")] String FileSystem;
+[PropertyContext("DateInventoried")] String DateInventoried;
+};
+
+#pragma namespace ("\\\\.\\root\\cimv2")
+#pragma deleteclass("NETWORKPRINTERS", NOFAIL)
+[dynamic, provider("RegProv"), ClassContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\SCCMINVENTORY\\NETWORKPRINTERS")]
+Class NETWORKPRINTERS
+{
+[key] string KeyName;
+[PropertyContext("UserDomain")] String UserDomain;
+[PropertyContext("UserName")] String UserName;
+[PropertyContext("PrintServer")] String PrintServer;
+[PropertyContext("PrinterQueue")] String PrinterQueue;
+[PropertyContext("PrinterLocation")] String PrinterLocation;
+[PropertyContext("PrinterDriver")] String PrinterDriver;
+[PropertyContext("PrintProcessor")] String PrintProcessor;
+[PropertyContext("PrinterPortName")] String PrinterPortName;
+[PropertyContext("DateInventoried")] String DateInventoried;
+};
+
+#pragma namespace ("\\\\.\\root\\cimv2")
+#pragma deleteclass("NETWORKPRINTERS_64", NOFAIL)
+[dynamic, provider("RegProv"), ClassContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\SCCMINVENTORY\\NETWORKPRINTERS")]
+Class NETWORKPRINTERS_64
+{
+[key] string KeyName;
+[PropertyContext("UserDomain")] String UserDomain;
+[PropertyContext("UserName")] String UserName;
+[PropertyContext("PrintServer")] String PrintServer;
+[PropertyContext("PrinterQueue")] String PrinterQueue;
+[PropertyContext("PrinterLocation")] String PrinterLocation;
+[PropertyContext("PrinterDriver")] String PrinterDriver;
+[PropertyContext("PrintProcessor")] String PrintProcessor;
+[PropertyContext("PrinterPortName")] String PrinterPortName;
+[PropertyContext("DateInventoried")] String DateInventoried;
+};
+
+//===== End custom printer and drive reporting ======
